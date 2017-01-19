@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Лабораторные работы СТС-402 Чувилина</title>
+    <link rel='stylesheet' type='text/css' href='styles.css'/>
+    <script type="text/javascript" src="jquery-1.12.2.js"></script>
+    <link rel='stylesheet' href='bootstrap/css/bootstrap.min.css' type='text/css'>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body class="menu-background">
+   <button type="button" class="btn btn-default" id="main-button" onclick="location.href='index.htm'">
+      На персональную страницу студента
+   </button>
+
+   <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+         <div class="panel-heading">
+            <p class="name-subject">Лабораторная работа №3 по дисциплине "Интернет технологии"</p>
+         </div>
+         <div class="panel-body">
+            <div class="panel panel-info">
+               <div class="panel-heading">
+                  <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#create_tables">
+                        Создание таблиц</a>
+                  </h4>
+               </div>
+               <div id="create_tables" class="panel-collapse collapse">
+                     <div class="panel panel-default">
+                        <div class="panel-body">
+                           <pre style="font-weight: 600">
+                              USE `sport_school`;
+                              <p>Таблица "Группы":</p>
+                              CREATE TABLE `groups` (
+                              `id` int(4) auto_increment not null PRIMARY KEY,
+                              `name` varchar(16) not null,
+                              `description` text not null
+                              );
+                              <p>Таблица "Спортсмены":</p>
+                              CREATE TABLE `athletes` (
+                              `id` int(4) auto_increment not null PRIMARY KEY,
+                              `full_name` varchar(60) not null,
+                              `birth_date` date not null,
+                              `group_id` int(4)  not null,
+                              `sports_rank` varchar(30) not null,
+                              FOREIGN KEY (group_id) REFERENCES groups (id)
+                              );
+                              <p>Таблица "Тренера":</p>
+                              CREATE TABLE `coaches` (
+                              `id` int(4) auto_increment not null PRIMARY KEY,
+                              `name_coach` varchar(60) not null,
+                              `group_id` int(4) not null,
+                              FOREIGN KEY (group_id) REFERENCES groups (id)
+                              );
+
+                           </pre>
+                        </div>
+                     </div>
+
+               </div>
+            </div>
+            <div class="panel panel-info">
+               <div class="panel-heading">
+                  <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#insert_data">
+                        Заполнение данными</a>
+                  </h4>
+               </div>
+               <div id="insert_data" class="panel-collapse collapse">
+                  <div class="panel panel-default">
+                     <div class="panel-body">
+                           <pre style="font-weight: 600">
+                              <p>Таблица "Группы":</p>
+                              INSERT INTO `groups` VALUES
+                              (1,'ПГ-4','Профессиональная (участники сборной региона)');
+                              INSERT INTO `groups` VALUES
+                              (2,'СПГ-1','Средняя профессиональная');
+                              INSERT INTO `groups` VALUES
+                              (3,'СПГ-3','Средняя профессиональная');
+                              INSERT INTO `groups` VALUES
+                              (4,'МГ-4','Младшая');
+
+                              <p>Таблица "Тренера":</p>
+                              INSERT INTO `coaches` VALUES
+                              (1,'Радужный Михаил Викторович', 1);
+                              INSERT INTO `coaches` VALUES
+                              (2,'Самсонова Людмила Витальевна', 2);
+                              INSERT INTO `coaches` VALUES
+                              (3,'Полозов Сергей Георгиевич', 3);
+                              INSERT INTO `coaches` VALUES
+                              (4,'Вострова Екатерина Михайловна',4);
+
+                              <p>Таблица "Спортсмены":</p>
+                              INSERT INTO `athletes` VALUES
+                              (1,'Широков Андрей Викторович','1998.03.10', 1, 'I взрослый разряд');
+                              INSERT INTO `athletes` VALUES
+                              (2,'Лейкина Елизавета Вячеславовна','2001.11.26', 2, 'II юношеский разряд');
+                              INSERT INTO `athletes` VALUES
+                              (3,'Антонов Станислав Юрьевич','2006.05.19', 4, 'III юношеский разряд');
+                              INSERT INTO `athletes` VALUES
+                              (4,'Казакова Полина Георгиевна','1999.07.17', 1, 'I взрослый разряд');
+                              INSERT INTO `athletes` VALUES
+                              (5,'Сергеева Элеонора Эдуардовна','2008.05.25', 4, 'нет');
+                              INSERT INTO `athletes` VALUES
+                              (6,'Мухамадиев Тимур Айратович','2002.02.04', 2, 'II взрослый разряд');
+                              INSERT INTO `athletes` VALUES
+                              (7,'Белова Виктория Азаматовна','1998.09.19', 1, 'I взрослый разряд');
+                              INSERT INTO `athletes` VALUES
+                              (8,'Панфилов Константин Игоревич','2004.08.12', 3, 'III взрослый разряд');
+                              INSERT INTO `athletes` VALUES
+                              (9,'Трофимова Екатерина Дмитриевна','2000.01.24', 2, 'II взрослый разряд');
+                              INSERT INTO `athletes` VALUES
+                              (10,'Дементьев Владислав Владимирович','2007.03.14', 4, 'нет');
+                              INSERT INTO `athletes` VALUES
+                              (11,'Султанов Руслан Ильдарович','2008.10.21', 4, 'нет');
+                              INSERT INTO `athletes` VALUES
+                              (12,'Потапова Инна Олеговна','2003.11.17', 3, 'I юношеский разряд');
+                              INSERT INTO `athletes` VALUES
+                              (13,'Данилова Арина Сергеевна','2002.12.10', 2, 'II взрослый разряд');
+                              INSERT INTO `athletes` VALUES
+                              (14,'Ветров Никита Андреевич','2007.06.12', 4, 'III юношеский разряд');
+                              INSERT INTO `athletes` VALUES
+                              (15,'Юдина Яна Владимировна','1999.04.16', 1, 'I взрослый разряд');
+                              INSERT INTO `athletes` VALUES
+                              (16,'Кириллова Дарья Евгеньевна','2003.01.20', 2, 'I взрослый разряд');
+                              INSERT INTO `athletes` VALUES
+                              (17,'Саенкова Елена Павловна','2006.07.04', 4, 'II юношеский разряд');
+                              INSERT INTO `athletes` VALUES
+                              (18,'Нестеров Антон Юрьевич','2008.11.29', 4, 'нет');
+                              INSERT INTO `athletes` VALUES
+                              (19,'Желдин Владимир Тимофеевич','2002.04.08', 3, 'II взрослый разряд');
+                              INSERT INTO `athletes` VALUES
+                              (20,'Фомина Анастасия Павловна','1999.05.03', 1, 'I взрослый разряд');
+                              INSERT INTO `athletes` VALUES
+                              (21,'Нургалеева Екатерина Радиковна','2005.03.17', 3, 'I взрослый разряд');
+                              INSERT INTO `athletes` VALUES
+                              (22,'Лаврентьева Юлия Сергеевна','2001.09.06', 2, 'I взрослый разряд');
+                              INSERT INTO `athletes` VALUES
+                              (23,'Павлюченков Кирилл Витальевич','1998.02.28', 1, 'III взрослый разряд');
+                           </pre>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+            <div class="panel panel-info">
+               <div class="panel-heading">
+                  <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#queries">
+                        Запросы и выборки</a>
+                  </h4>
+               </div>
+               <div id="queries" class="panel-collapse collapse">
+                  <div class="panel panel-default">
+                     <div class="panel-body">
+                           <pre style="font-weight: 600">
+                              <p>Все спортсмены с указанной группой:</p>
+                              SELECT athletes.id as '№', full_name as 'ФИО спортсмена',
+                                     birth_date as 'Дата рождения', g.name as 'Группа',
+                                     sports_rank as 'Спортивный разряд'
+                              FROM athletes
+                              LEFT JOIN groups g ON athletes.group_id = g.id
+
+                              <p>По группам:</p>
+                              SELECT athletes.id as '№', full_name as 'ФИО спортсмена',
+                                     birth_date as 'Дата рождения', g.name as 'Группа',
+                                     sports_rank as 'Спортивный разряд'
+                              FROM athletes
+                              LEFT JOIN groups g ON athletes.group_id = g.id
+
+                              SELECT full_name as 'ФИО спортсмена',
+                                     birth_date as 'Дата рождения', g.name as 'Группа',
+                                     sports_rank as 'Спортивный разряд', c.name_coach as 'Имя тренера'
+                              FROM athletes
+                              LEFT JOIN groups g ON athletes.group_id = g.id
+                              LEFT JOIN coaches c ON c.group_id = g.id
+                              WHERE athletes.group_id = 2
+
+                              SELECT full_name as 'ФИО спортсмена',
+                                     birth_date as 'Дата рождения', g.name as 'Группа',
+                                     sports_rank as 'Спортивный разряд', c.name_coach as 'Имя тренера'
+                              FROM athletes
+                              LEFT JOIN groups g ON athletes.group_id = g.id
+                              LEFT JOIN coaches c ON c.group_id = g.id
+                              WHERE athletes.group_id = 3
+
+                              SELECT full_name as 'ФИО спортсмена',
+                                     birth_date as 'Дата рождения', g.name as 'Группа',
+                                     sports_rank as 'Спортивный разряд', c.name_coach as 'Имя тренера'
+                              FROM athletes
+                              LEFT JOIN groups g ON athletes.group_id = g.id
+                              LEFT JOIN coaches c ON c.group_id = g.id
+                              WHERE athletes.group_id = 4
+
+                              <p>Сортировка по фамилиии спортсмена</p>
+                              SELECT athletes.id as '№', full_name as 'ФИО спортсмена',
+                                     birth_date as 'Дата рождения', g.name as 'Группа',
+                                     sports_rank as 'Спортивный разряд'
+                              FROM athletes
+                              LEFT JOIN groups g ON athletes.group_id = g.id
+                              ORDER BY full_name
+
+                              <p>Выборка спортсменов с годами рождения от 2000 до 2006:</p>
+                              SELECT athletes.id as '№', full_name as 'ФИО спортсмена',
+                                     birth_date as 'Дата рождения', g.name as 'Группа',
+                                     sports_rank as 'Спортивный разряд'
+                              FROM athletes
+                              LEFT JOIN groups g ON athletes.group_id = g.id
+                              WHERE athletes.birth_date < '2007.01.01' AND athletes.birth_date > '2000.01.01'
+
+                              <p>Выборка спортсменов со II юношеским разрядом:</p>
+                              SELECT athletes.id as '№', full_name as 'ФИО спортсмена',
+                                     birth_date as 'Дата рождения', g.name as 'Группа',
+                                     sports_rank as 'Спортивный разряд'
+                              FROM athletes
+                              LEFT JOIN groups g ON athletes.group_id = g.id
+                              WHERE athletes.sports_rank = 'II юношеский разряд'
+
+                           </pre>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>СТС-402 Чувилина</title>
+		<link rel='stylesheet' type='text/css' href='styles.css'/>
+		<script type="text/javascript" src="jquery-1.12.2.js"></script>
+		<link rel='stylesheet' href='bootstrap/css/bootstrap.min.css' type='text/css'>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body class="main-background">
+		<div id="header">
+			<div class="flex-item" id="flex">
+				<h2 class="name">Чувилина Мария Юрьевна</h2>
+			</div>
+
+			<div class="raw-item" id="raw">
+				<div class="photo"> <img src="./images/photo.jpg"> </div>
+			</div>
+
+			<div class="raw-item-buttons" id="raw">
+				<div class="resume">
+					<button type="button" class="btn btn-primary btn-lg" id="button-style" onclick="location.href='./resume.html'">
+						Резюме
+						<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+					</button>
+				</div>
+				<div class="publication">
+					<button type="button" class="btn btn-primary btn-lg" id="button-style" onclick="location.href='./publications.html'">
+						Научные публикации
+						<span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+					</button>
+				</div>
+				<div class="lessons">
+					<button type="button" class="btn btn-primary btn-lg" id="button-style" onclick="location.href='./lessons.html'">
+						Лабораторные работы
+						<span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="panel panel-success">
+		  <div class="panel-heading">
+		    <p class="panel-title" id="header-self">Информация о себе</p>
+		  </div>
+		  <div class="panel-body">
+			  <h3 class="h3-current">В настоящий момент являюсь студенткой 4 курса группы СТС-402.</h3>
+		  </div>
+
+			<table class="table" id="main-table">
+					<tbody>
+						<tr>
+							<td class="header-table">Дата рождения: </td>
+							<td>3 сентября 1994 г.</td>
+						</tr>
+						<tr>
+							<td class="header-table">Среднее образование</td>
+							<td>Средняя образовательная школа №41 г.Уфа</td>
+						</tr>
+						<tr>
+							<td class="header-table">Высшее образование (текущее место учебы): </td>
+							<td>Уфимский государственный авиационный технический университет</td>
+						</tr>
+						<tr>
+							<td class="header-table">Специальность:</td>
+							<td>Специальные организационно-технические системы (специалитет)</td>
+						</tr>
+						<tr>
+							<td class="header-table">Годы обучения:</td>
+							<td>2012-2017 г.</td>
+						</tr>
+					</tbody>
+			</table>
+
+			<button id="contact" type="button"
+					  data-placement="right"
+					  class="btn btn-md btn-success"
+					  data-toggle="popover" data-html="true"
+					  data-content="<p class='popover-contact'>3maria@mail.ru</p>"
+					  data-original-title="Электронная почта">
+				Контактная информация
+			</button>
+
+			<script>
+				$(document).ready(function(){
+					$('[data-toggle="popover"]').popover();
+				});
+			</script>
+		</div>
+
+	</body>
+</html>

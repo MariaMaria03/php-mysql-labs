@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Лабораторные работы СТС-402 Чувилина</title>
+    <link rel='stylesheet' type='text/css' href='styles.css'/>
+    <script type="text/javascript" src="jquery-1.12.2.js"></script>
+    <link rel='stylesheet' href='bootstrap/css/bootstrap.min.css' type='text/css'>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body class="menu-background">
+   <button type="button" class="btn btn-default" id="main-button" onclick="location.href='index.htm'">
+      На главную
+   </button>
+
+   <span class="label label-default" id="label-student">Персональная страница студента</span>
+
+
+   <ul class="nav nav-tabs" id="tab-menu">
+      <li role="presentation"><a href="resume.html" class="item-menu">Резюме</a></li>
+      <li role="presentation"><a href="publications.html" class="item-menu">Научные публикации</a></li>
+      <li role="presentation" class="active"><a class="item-menu">Лабораторные работы</a></li>
+   </ul>
+
+
+
+   <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+         <div class="panel-heading">
+            <p class="name-subject">Лабораторные работы по дисциплине "Интернет технологии"</p>
+         </div>
+         <div class="panel-body">
+            <div class="panel panel-info">
+               <div class="panel-heading">
+                  <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#laba1">
+                        Лабораторная работа №1</a>
+                  </h4>
+               </div>
+               <div id="laba1" class="panel-collapse collapse">
+                  <div class="panel-body">
+                     <div class="panel panel-default">
+                        <div class="panel-body">
+                           <p class="theme-laba">Тема лабораторной работы №1: 'Установка и настройка Web-сервера'</p>
+                        </div>
+                        <div class="panel-footer">
+                           <p class="target-laba" style="font-weight: 600;">
+                              Цель и задание лабораторной работы:
+                           </p>
+                           <p class="target-laba">
+                              Целью лабораторной работы является изучение процедуры
+                              установки и настройки программного обеспечения WEB-сервера.
+                              </p>
+                           <p class="target-laba">
+                              Задание: Разработать комплект
+                              html-документов с персональной информацией, на которой представить автобиографию. В
+                              качестве информации указать дату и место рождения, наименование и вид учебного заведения,
+                              которое закончили до поступления в УГАТУ, дату поступления в УГАТУ, краткий рассказ о
+                              своих интересах и т.п. Подготовить и обработать свою фотографию и опубликовать ее на Вашей html странице.
+                           </p>
+
+                           <div style="text-align: center">
+                              <img src="./images/Главная_стр.png" title="Вид главной страницы"/>
+                           </div>
+                        </div>
+                     </div>
+
+                     <button type="submit" class="btn btn-default" onclick="window.open('./Чувилина_ЛР1.doc')" id="download_laba">
+                        <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
+                        Скачать отчет
+                     </button>
+                  </div>
+               </div>
+            </div>
+            <div class="panel panel-info">
+               <div class="panel-heading">
+                  <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#laba2">
+                        Лабораторная работа №2</a>
+                  </h4>
+               </div>
+               <div id="laba2" class="panel-collapse collapse">
+                  <div class="panel-body">
+                     <div class="panel panel-default">
+                        <div class="panel-body">
+                           <p class="theme-laba">Тема лабораторной работы №2: 'Разработка распределенных интерактивных приложений
+                                                   на базе интернет-технологий'
+                           </p>
+                        </div>
+                        <div class="panel-footer">
+                           <p class="target-laba" style="font-weight: 600;">
+                              Цель лабораторной работы: приобретение практических навыков в области создания
+                              интерактивных WEB-приложений, работающих в режиме реального времени
+                           </p>
+                           <p class="target-laba">
+                              Задание: Создать программу, выводящую список спортсменов, которые числятся в спортивной школе
+                              по плаванию на текущую дату. Осуществить сортировку по группам и фамилии спортсменов.
+                           </p>
+                           <button type="button" class="btn btn-primary btn-lg" id="button-style" onclick="location.href='./list_academy.php'">
+                              Посмотреть результат
+                           </button>
+
+                        </div>
+                     </div>
+
+                     <button type="submit" class="btn btn-default" onclick="window.open('./Чувилина_ЛР2.doc')" id="download_laba">
+                        <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
+                        Скачать отчет
+                     </button>
+                  </div>
+
+               </div>
+            </div>
+            <div class="panel panel-info">
+               <div class="panel-heading">
+                  <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#laba3">
+                        Лабораторная работа №3</a>
+                  </h4>
+               </div>
+               <div id="laba3" class="panel-collapse collapse">
+                  <div class="panel-body">
+                     <div class="panel panel-default">
+                        <div class="panel-body">
+                           <p class="theme-laba">Тема лабораторной работы №3: 'Основы работы с СУБД MySql'
+                           </p>
+                        </div>
+                        <div class="panel-footer">
+                           <p class="target-laba" style="font-weight: 600;">
+                              Цель лабораторной работы: изучение процедуры установки и настройки СУБД MySQL
+                           </p>
+                           <p class="target-laba">
+                              Задание: Ознакомиться с СУБД MySql, выполнить индивидуальное задание: cоздать базу данных,
+                              содержащую информацию об спортивной школе по плаванию. выводящую список спортсменов; создать необходимые
+                              для этого таблицы (спортсмены, тренерский состав, группы) и выполнить различные запросы (выборка, сортировка).
+                           </p>
+                           <button type="button" class="btn btn-primary btn-lg" id="button-style" onclick="location.href='./result_lab3.html'">
+                              Посмотреть результат
+                           </button>
+
+                        </div>
+                     </div>
+
+                     <button type="submit" class="btn btn-default" onclick="window.open('./Чувилина_ЛР3.doc')" id="download_laba">
+                        <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
+                        Скачать отчет
+                     </button>
+                  </div>
+               </div>
+            </div>
+
+            <div class="panel panel-info">
+               <div class="panel-heading">
+                  <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#laba4">
+                        Лабораторная работа №4</a>
+                  </h4>
+               </div>
+               <div id="laba4" class="panel-collapse collapse">
+                  <div class="panel-body">
+                     <div class="panel panel-default">
+                        <div class="panel-body">
+                           <p class="theme-laba">Тема лабораторной работы №4: 'Основы клиент-серверных технологий'</p>
+                        </div>
+                        <div class="panel-footer">
+                           <p class="target-laba" style="font-weight: 600;">
+                              Цель лабораторной работы: изучение способов отправки данных на сервер и их обработки с помощью PHP
+                           </p>
+                           <p class="target-laba">
+                              Задание: Создать программу, в которой предлагается ввести логин и пароль. В зависимости от введенных
+                              или выбранных данных, пользователю сообщается информация о спортсменах, обучающихся в спортивной
+                              школе. Работа в системе возможна под логином admin и паролем ugatu.
+                           </p>
+                           <button type="button" class="btn btn-primary btn-lg" id="button-style" onclick="location.href='./authorization.php'">
+                              Посмотреть результат
+                           </button>
+                        </div>
+                     </div>
+
+                        <button type="submit" class="btn btn-default" onclick="window.open('./Чувилина_ЛР4.doc')" id="download_laba">
+                           <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
+                           Скачать отчет
+                        </button>
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="panel panel-info">
+               <div class="panel-heading">
+                  <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#laba5">
+                        Лабораторная работа №5</a>
+                  </h4>
+               </div>
+               <div id="laba5" class="panel-collapse collapse">
+                  <div class="panel-body">
+                     <div class="panel panel-default">
+                        <div class="panel-body">
+                           <p class="theme-laba">Тема лабораторной работы №5: 'Обработка данных средствами MySQL и PHP'</p>
+                        </div>
+                        <div class="panel-footer">
+                           <p class="target-laba">
+                              Цель лабораторной работы: изучение и получение практических навыков обработки данных с
+                                       помощью СУБД MySQL и в применении интерфейсных функций PHP для доступа к данным.
+                           </p>
+                           <button type="button" class="btn btn-primary btn-lg" id="button-style" onclick="location.href='./app_welcome.php'">
+                              Посмотреть результат
+                           </button>
+                        </div>
+                     </div>
+
+                     <button type="submit" class="btn btn-default" onclick="window.open('./Чувилина_ЛР5.doc')" id="download_laba">
+                        <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
+                        Скачать отчет
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

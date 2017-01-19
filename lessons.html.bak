@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Лабораторные работы СТС-402 Чувилина</title>
+    <link rel='stylesheet' type='text/css' href='styles.css'/>
+    <script type="text/javascript" src="jquery-1.12.2.js"></script>
+    <link rel='stylesheet' href='bootstrap/css/bootstrap.min.css' type='text/css'>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body class="menu-background">
+   <button type="button" class="btn btn-default" id="main-button" onclick="location.href='index.htm'">
+      На главную
+   </button>
+
+   <span class="label label-default" id="label-student">Персональная страница студента</span>
+
+
+   <ul class="nav nav-tabs" id="tab-menu">
+      <li role="presentation"><a href="resume.html" class="item-menu">Резюме</a></li>
+      <li role="presentation"><a href="publications.html" class="item-menu">Научные публикации</a></li>
+      <li role="presentation" class="active"><a class="item-menu">Лабораторные работы</a></li>
+   </ul>
+
+
+
+   <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+         <div class="panel-heading">
+            <p class="name-subject">Лабораторные работы по дисциплине "Интернет технологии"</p>
+         </div>
+         <div class="panel-body">
+            <div class="panel panel-info">
+               <div class="panel-heading">
+                  <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#laba1">
+                        Лабораторная работа №1</a>
+                  </h4>
+               </div>
+               <div id="laba1" class="panel-collapse collapse">
+                  <div class="panel-body">
+                     <div class="panel panel-default">
+                        <div class="panel-body">
+                           <p class="theme-laba">Тема лабораторной работы №1: 'Установка и настройка Web-сервера'</p>
+                        </div>
+                        <div class="panel-footer">
+                           <p class="target-laba" style="font-weight: 600;">
+                              Цель и задание лабораторной работы:
+                           </p>
+                           <p class="target-laba">
+                              Целью лабораторной работы является изучение процедуры
+                              установки и настройки программного обеспечения WEB-сервера.
+                              </p>
+                           <p class="target-laba">
+                              Задание: Разработать комплект
+                              html-документов с персональной информацией, на которой представить автобиографию. В
+                              качестве информации указать дату и место рождения, наименование и вид учебного заведения,
+                              которое закончили до поступления в УГАТУ, дату поступления в УГАТУ, краткий рассказ о
+                              своих интересах и т.п. Подготовить и обработать свою фотографию и опубликовать ее на Вашей html странице.
+                           </p>
+
+                           <div style="text-align: center">
+                              <img src="./images/Главная_стр.png" title="Вид главной страницы"/>
+                           </div>
+                        </div>
+                     </div>
+
+                     <button type="submit" class="btn btn-default" onclick="window.open('./Чувилина_ЛР1.doc')" id="download_laba">
+                        <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
+                        Скачать отчет
+                     </button>
+                  </div>
+               </div>
+            </div>
+            <div class="panel panel-info">
+               <div class="panel-heading">
+                  <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#laba2">
+                        Лабораторная работа №2</a>
+                  </h4>
+               </div>
+               <div id="laba2" class="panel-collapse collapse">
+                  <div class="panel-body">
+
+                  </div>
+               </div>
+            </div>
+            <div class="panel panel-info">
+               <div class="panel-heading">
+                  <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#laba3">
+                        Лабораторная работа №3</a>
+                  </h4>
+               </div>
+               <div id="laba3" class="panel-collapse collapse">
+                  <div class="panel-body">
+
+                  </div>
+               </div>
+            </div>
+
+            <div class="panel panel-info">
+               <div class="panel-heading">
+                  <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#laba4">
+                        Лабораторная работа №4</a>
+                  </h4>
+               </div>
+               <div id="laba4" class="panel-collapse collapse">
+                  <div class="panel-body">
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

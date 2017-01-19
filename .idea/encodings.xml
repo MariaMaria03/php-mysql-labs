@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/admin_page.php" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app_athletes.php" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app_block_info.php" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app_block_user.php" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app_decision_proposal.php" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app_main.php" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app_new_tournament.php" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app_new_user.php" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app_proposal.php" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app_registration.php" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app_results.php" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app_send_proposal.php" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app_users.php" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app_welcome.php" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app_wrong_data.php" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/authorization.php" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/lessons.html" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/list_academy.php" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/publications.html" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/resume.html" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/wrong_data.php" charset="windows-1251" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
